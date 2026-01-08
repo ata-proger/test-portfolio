@@ -1,0 +1,80 @@
+.projects {
+    padding: 70px 0;
+}
+
+.projects__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+.projects__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.projects__list__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.projects__list__item__image {
+    border-radius: 5px;
+}
+
+.projects__list__item__title {
+    padding-left: 20px;
+    padding-bottom: 25px;
+
+    font-family: "fontDMsans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+}
+
+@media (max-width: 430px) {
+    .projects__list__item {
+        width: 290px;
+    }
+    .projects__list__item__image {
+        width: 290;
+        height: auto;
+    }
+}
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scroll-animate {
+    animation: fade-up 0.3s linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade 0.8s ease forwards;
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

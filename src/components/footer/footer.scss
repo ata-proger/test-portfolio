@@ -1,0 +1,35 @@
+.footer {
+    margin-top: auto;
+    background-color: var(--accent-black);
+    color: var(--color-white);
+    text-align: center;
+    padding: 60px 0 50px 0;
+}
+
+.footer__links {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+.footer__text {
+    font-family: "fontDMsans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+
+    margin-top: 27px;
+}
+
+@media (max-width: 400px) {
+    .footer__links {
+        column-gap: 20px;
+    }
+
+    .footer__links__item {
+        width: 30px;
+        height: 30px;
+    }
+}

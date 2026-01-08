@@ -1,0 +1,33 @@
+.somepage {
+    font-family: "fontDMsans";
+    margin: 70 auto;
+    padding: 0 15px;
+    text-align: center;
+    max-width: 570px;
+}
+
+.somepage__list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.somepage__list__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.somepage__list__item__title {
+    font-family: "fontDMsans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+}
+
+.somepage__mailto {
+    color: var(--accent-purple);
+}
