@@ -3,8 +3,8 @@ import "./footer.scss";
 
 const Footer = () => {
     return (
-        <footer className="footer">
-            <div className="footer__links">
+        <footer className="footer ">
+            <div className="footer__links footer__animation">
                 <a href="#">
                     <Image
                         className="footer__links__item"
@@ -55,7 +55,9 @@ const Footer = () => {
                     />
                 </a>
             </div>
-            <p className="footer__text">© 2022 frontend-dev.com</p>
+            <p className="footer__text footer__animation">
+                © 2022 frontend-dev.com
+            </p>
         </footer>
     );
 };

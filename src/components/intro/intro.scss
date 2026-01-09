@@ -15,6 +15,20 @@
     background-image: url("./intro__bg.png");
     background-repeat: no-repeat;
     background-position: center center;
+    // transition: all 0.8s;
+
+    animation-name: bg-image;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
+
+@keyframes bg-image {
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 55%;
+    }
 }
 
 .intro__title {
@@ -23,6 +37,12 @@
     font-size: 60px;
     line-height: 1.4;
     letter-spacing: -0.5px;
+    // opacity: 0;
+
+    animation-name: fade-in-left;
+    animation-duration: 0.8s;
+    animation-delay: 0.8s;
+    animation-fill-mode: both;
 
     span {
         color: var(--accent-purple);
@@ -33,12 +53,39 @@
     }
 }
 
+@keyframes fade-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .intro__suptitle {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.3;
     letter-spacing: -0.5px;
+
+    animation-name: fade-in-right;
+    animation-duration: 0.8s;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;
 }
 
 .intro__btn {
@@ -46,6 +93,11 @@
     padding: 12px 28px;
     background-color: var(--accent-purple);
     border-radius: 5px;
+
+    animation-name: fade-in-left;
+    animation-duration: 0.8s;
+    animation-delay: 1.6s;
+    animation-fill-mode: both;
 }
 
 @media (max-width: 700px) {
@@ -54,6 +106,15 @@
 
         p {
             font-size: 30px;
+        }
+    }
+
+    @keyframes bg-image {
+        from {
+            background-size: 100%;
+        }
+        to {
+            background-size: 80%;
         }
     }
 }

@@ -6,9 +6,9 @@ const Projects = () => {
     return (
         <section className="projects">
             <div className="container">
-                <div className="projects__inner">
+                <div className="projects__inner animation-bottom-top">
                     <h2 className="content__title">Projects</h2>
-                    <div className="projects__list fade-in">
+                    <div className="projects__list">
                         <Link href="#" className="projects__list__item">
                             <Image
                                 className="projects__list__item__image"

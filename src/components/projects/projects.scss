@@ -1,5 +1,27 @@
+html {
+    // scroll-timeline: --bottom-to-top y;
+}
+
 .projects {
     padding: 70px 0;
+}
+
+.animation-bottom-top {
+    animation-name: bottom-to-top;
+    // animation-duration: 5 s;
+    animation-timeline: scroll();
+    animation-range: entry 10% cover 50%;
+}
+
+@keyframes bottom-to-top {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .projects__inner {
@@ -58,12 +80,6 @@
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.scroll-animate {
-    animation: fade-up 0.3s linear both;
-    animation-timeline: view();
-    animation-range: entry 20% cover 30%;
 }
 
 .fade-in {

@@ -9,7 +9,9 @@ const Intro = () => {
                         Hi, my name is <span>Ata</span>
                         <p>a frontend developer</p>
                     </h1>
-                    <p>with passion for learning and creating.</p>
+                    <p className="intro__suptitle">
+                        with passion for learning and creating.
+                    </p>
                     <a className="intro__btn" href="/CV.pdf" download="CV">
                         Download CV
                     </a>

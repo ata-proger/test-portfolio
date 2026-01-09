@@ -9,9 +9,22 @@
     justify-content: space-between;
     align-items: center;
     height: 64px;
+
+    animation-name: fade-in-top;
+    animation-duration: 1s;
 }
 
 .header__logo {
     font-size: 24px;
     line-height: 1;
+}
+
+@keyframes fade-in-top {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
